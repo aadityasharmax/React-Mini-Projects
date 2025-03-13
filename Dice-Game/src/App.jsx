@@ -1,14 +1,21 @@
 import { useState } from 'react'
+import styled from 'styled-components'
+import Home from './components/Home'
+import GamePlay from './components/GamePlay';
 
 
 function App() {
-  const [count, setCount] = useState(0)
+  const[isGameStarted , setisGameStarted] = useState(false);
+
+  const toggleGame = () => {
+    setisGameStarted((prev) => !prev) 
+  }
 
   return (
     <>
-      <h1 
-      className='text-blue-600'
-      >HI</h1>
+    {
+      isGameStarted ? <GamePlay/>:<Home toggle={toggleGame}/>
+    }
     </>
   )
 }
