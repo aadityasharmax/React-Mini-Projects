@@ -1,8 +1,14 @@
 import React from 'react'
+import TotalScore from './TotalScore'
+import NumberGenerator from './NumberGenerator'
 
 const GamePlay = () => {
   return (
-    <h1>HU</h1>
+    <>
+    <TotalScore/>
+    <NumberGenerator/>
+    </>
+    
   )
 }
 
