@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Navbar from "./components/NavBar";
+import NavBar from "./components/NavBar";
 import Input from "./components/Input";
 import { collection, getDocs, onSnapshot } from "firebase/firestore";
 import { db } from "./config/firebase";
@@ -62,7 +62,7 @@ function App() {
   return (
     <>
       <div className="m-auto max-w-[361px] px-4">
-        <Navbar />
+        <NavBar />
         <Input filterContacts={filterContacts} onOpen={onOpen} />
         <div className="mt-4">
           {contacts.length <= 0 ? (
