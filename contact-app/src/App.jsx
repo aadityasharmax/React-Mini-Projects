@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import NavBar from "./components/NavBar";
+import NavBar from "./components/Navbar";
 import Input from "./components/Input";
 import { collection, getDocs, onSnapshot } from "firebase/firestore";
 import { db } from "./config/firebase";
